@@ -1,0 +1,15 @@
+{
+  "name": "learning",
+  "version": "1.0.0",
+  "description": "",
+  "main": "mosh-nodejs-ch2-modules-system.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "mongoose": "^6.3.1",
+    "underscore": "^1.13.3"
+  }
+}
