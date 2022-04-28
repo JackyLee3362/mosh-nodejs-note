@@ -1,5 +1,7 @@
 # Chapter 3 第三章节
+
 ## 1 node package manager(npm)
+
 install specific version((i->install, g->global)): 
 
 ```bash
@@ -31,6 +33,7 @@ console.log(result);
 
 
 ## 5 package dependencies 包依赖
+
 比如，我们想下载[mongoose](https://mongoosejs.com/)
 
 ## 6 NPM packages and scm NPM包和源码管理
@@ -42,6 +45,7 @@ npm i
 ```
 
 ## 7 Semantic Versioning 语义化版本控制
+
 4.13.5-> Major.Minor.Patch
 https://semver.org/
 ^4.13.6 -> 4.x
@@ -60,11 +64,13 @@ npm view mongoose [dependencies | versions]
 ```
 
 ## 10 Installing a Specific Version of a Package 安装特定版本的包
+
 ```bash
 npm install mongoose@2.4.2
 ```
 
 ## 11 Updating Local Packages 升级本地包
+
 ```bash
 npm outdated
 npm update  // 无法安装大版本2.x.x无法更新到4.x.x
@@ -74,11 +80,13 @@ npm install
 ```
 
 ## 12 DevDependencies 开发用依赖库
+
 ```bash
 npm i jshint --save-dev
 ```
 
 ## 13 Unistalling a Package 删除包
+
 ```bash
 npm un mongoose / npm uninstall mongoose
 ```
@@ -92,6 +100,7 @@ npm -g outdate
 ```
 
 ## 15 Publishing a Package 发布一个包
+
 比如我们在index.js中写下如下语句
 
 ```javascript
@@ -107,6 +116,9 @@ npm publish
 ```
 
 ## 16 updating a Published Package 发布包更新
+
 ```bash
 npm version <major | minor | patch>
 ```
+
+
