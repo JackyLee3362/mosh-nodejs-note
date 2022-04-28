@@ -1,33 +1,35 @@
-/**
- * 7 path module
- * https://nodejs.org/dist/latest-v16.x/docs/api/path.html
- */
+# Chapter 2 第二章节
+
+## 7 [path module](https://nodejs.org/dist/latest-v16.x/docs/api/path.html)
+
+```javascript
 path = require('path');
 path.parse(__dirname);
-/**
- * 8 os module
- * https://nodejs.org/dist/latest-v16.x/docs/api/os.html
- */
+```
+
+## 8 [os module](https://nodejs.org/dist/latest-v16.x/docs/api/os.html)
+
+```javascript
 os = require('os');
 os.userInfo();
 console.log(`total memory is ${os.totalmem()}`);
-/**
- * 9 filesystem module
- * https://nodejs.org/dist/latest-v16.x/docs/api/fs.html
- */
+```
+
+## 9 [file system module](https://nodejs.org/dist/latest-v16.x/docs/api/fs.html)
+
+```javascript
 const fs = require('fs');
 const files = fs.readdirSync('./');
 // 回调函数function
 fs.readdir('./',function(err, files){
-    if(err) console.log('Error', err);
-    else console.log('Result', files);
+if(err) console.log('Error', err);
+else console.log('Result', files);
 })
+```
 
-/**
- * 10 Event Module
- * https://nodejs.org/dist/latest-v16.x/docs/api/events.html
- */
+## 10 [Event Module](https://nodejs.org/dist/latest-v16.x/docs/api/events.html)
 
+```javascript
 const EventEmitter = require('events');  //  EventEmitter is a class
 const emmiter = new EventEmitter();
 //Register a listener
@@ -37,15 +39,17 @@ emmiter.on('messageLogged', function(){
 
 // Raise an event
 emmiter.emit('messageLogged');
+```
 
-/**
- * Modules System 11 Event Arguments
- */
+## 11 Event Arguments
+
+```javascript
+const EventEmitter = require('events');  //  EventEmitter is a class
+const emmiter = new EventEmitter();
 //Register a listener
- emmiter.on('messageLogged2', function(arg){
-    console.log('Listener2 called', arg);
+emmiter.on('messageLogged2', function(arg){
+console.log('Listener2 called', arg);
 });
-
 // Raise an event
 emmiter.emit('messageLogged2', {
     id: 1,
@@ -57,26 +61,28 @@ emmiter.on('logging', (arg)=>{
     console.log('logging:', arg);
 })
 emmiter.emit('logging', {data:'message'});
+```
 
-/**
- * 12 Extending EventEmmiter
- */
+
+
+## 12 Extending EventEmmiter
+
+```javascript
 // in logger.js
 class Logger extends EventEmitter{
-    log(message){
-        console.log(message);
-        this.emit('messageLogged',{id:2,url:'http://www'});
-    }
+log(message){
+    console.log(message);
+    this.emit('messageLogged',{id:2,url:'http://www'});
+}
 }
 const logger = new Logger();
 logger.on('messageLogged', arg=>console.log('Listener called', arg));
 logger.log('message in Logger class');
+```
 
-/**
- * 13 HTTP Module
- * https://nodejs.org/dist/latest-v16.x/docs/api/http.html
- */
+## 13 [HTTP Module](https://nodejs.org/dist/latest-v16.x/docs/api/http.html)
 
+```javascript
 const http = require('http');
 
 // const server = http.createServer();
@@ -95,4 +101,9 @@ const server = http.createServer((req,res) => {
 });
 server.listen(3000);
 console.log('Listening on port 3000 ...');
+```
+
+
+
+
 
