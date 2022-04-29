@@ -31,7 +31,6 @@ var result = _.contains([1,2,3],2);
 console.log(result);
 ```
 
-
 ## 5 package dependencies 包依赖
 
 比如，我们想下载[mongoose](https://mongoosejs.com/)
