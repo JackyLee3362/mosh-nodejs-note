@@ -59,7 +59,8 @@ nodemon
 ```bash
 // 设置环境变量（unix/linux使用export，win使用set）
 export PORT=5000
-set PORT=5000 // windows好像不太行
+set PORT=5000 // windows CMD模式
+$env:NODE_ENV="production" // powershell下使用
 ```
 
 ```javascript
@@ -202,4 +203,5 @@ app.delete('/api/courses/:id', (req, res) =>{
 
 ## 4.14 Project Build the Genres API 项目：构造通用API
 
-
+作业：搭建一个vilid.js后台服务器
+[源码答案](vidly.js)

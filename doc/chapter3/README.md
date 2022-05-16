@@ -1,14 +1,15 @@
-# Chapter 3 第三章节
+# Chapter 3 npm
 
 ## 1 node package manager(npm)
 
-install specific version((i->install, g->global)): 
+install specific version((i->install, g->global)):
 
 ```bash
-npm i -g npm@5.5.1 
+npm i -g npm@5.5.1
 ```
 
 ## 2 package.json
+
 ```bash
 mkdir npm-demo
 cd npm-demo
@@ -26,8 +27,8 @@ npm i underscore [--save]
 比如，我们想下载[underscore](http://underscorejs.org/)
 
 ```javascript
-var _ = require('underscore');  // Core moduls, File of folder, node_modules
-var result = _.contains([1,2,3],2);
+var _ = require("underscore"); // Core moduls, File of folder, node_modules
+var result = _.contains([1, 2, 3], 2);
 console.log(result);
 ```
 
@@ -35,12 +36,12 @@ console.log(result);
 
 比如，我们想下载[mongoose](https://mongoosejs.com/)
 
-## 6 NPM packages and scm NPM包和源码管理
+## 6 NPM packages and scm NPM 包和源码管理
 
 scm -> source code management
 
 ```bash
-npm i 
+npm i
 ```
 
 ## 7 Semantic Versioning 语义化版本控制
@@ -48,9 +49,9 @@ npm i
 4.13.5-> Major.Minor.Patch
 https://semver.org/
 ^4.13.6 -> 4.x
-~1.8.3  -> 1.8.x // Tilde 
+~1.8.3 -> 1.8.x // Tilde
 
-## 8 List the Installed Packages 
+## 8 List the Installed Packages
 
 ```bash
 npm list [-a]
@@ -100,10 +101,12 @@ npm -g outdate
 
 ## 15 Publishing a Package 发布一个包
 
-比如我们在index.js中写下如下语句
+比如我们在 index.js 中写下如下语句
 
 ```javascript
-module.export.add = function(a,b){return a+b};
+module.export.add = function (a, b) {
+  return a + b;
+};
 ```
 
 并在命令行中输入
@@ -119,5 +122,3 @@ npm publish
 ```bash
 npm version <major | minor | patch>
 ```
-
-
