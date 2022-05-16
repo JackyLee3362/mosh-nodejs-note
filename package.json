@@ -4,15 +4,32 @@
   "description": "",
   "main": "mosh-nodejs-ch2-modules-system.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest --watchAll --verbose"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "bcrypt": "^5.0.1",
+    "config": "^3.3.7",
+    "express": "^4.18.1",
+    "express-async-errors": "^3.1.1",
+    "helmet": "^5.0.2",
+    "joi": "^17.6.0",
+    "joi-objectid": "^4.0.2",
+    "jsonwebtoken": "^8.5.1",
+    "lodash": "^4.17.21",
     "mongoose": "^6.3.1",
-    "underscore": "^1.13.3"
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.16",
+    "to": "^0.2.9",
+    "underscore": "^1.13.3",
+    "update": "^0.4.2",
+    "winston": "^3.7.2",
+    "winston-mongodb": "^5.0.7"
   },
   "devDependencies": {
-    "jshint": "^2.13.4"
+    "jest": "^28.1.0",
+    "jshint": "^2.13.4",
+    "supertest": "^6.2.3"
   }
 }

@@ -3,10 +3,29 @@ const Joi = require("joi");
 const router = express.Router();
 const { Course, validate } = require("../models/courses");
 const mongoose = require("mongoose");
+const auth = require("../middleware/auth"); // 10.14 保护路由
+const admin = require("../middleware/admin"); // 10.17 基于角色认证
+const asyncMiddleware = require("../middleware/async"); // 11.4 去掉try-catch块
+const validateObjectId = require("../middleware/validateObjectId"); // 13.8
 
-// 新写的POST
-router.post("/", async (req, res) => {
-  console.log("req.body=", req.body);
+// GET
+router.get("/", async (req, res, next) => {
+  // 11.6 测试winston
+  // throw new Error("Could not get the courses.");
+  const courses = await Course.find();
+  res.send(courses);
+});
+
+// GET id请求
+router.get("/:id", validateObjectId, async (req, res) => {
+  const courses = await Course.findById(req.params.id);
+  if (!courses)
+    return res.status(404).send("The course with the given Id is not found");
+  res.send(courses);
+});
+
+// POST
+router.post("/", auth, async (req, res) => {
   const { error } = validate(req.body);
   if (error) return res.status(400).send(error.details[0].message);
 
@@ -17,22 +36,8 @@ router.post("/", async (req, res) => {
   res.send(course);
 });
 
-// 新写的GET
-router.get("/", async (req, res) => {
-  const courses = await Course.find();
-  console.log("over");
-  res.send(courses);
-});
-
-// 新的GET id请求
-router.get("/:id", async (req, res) => {
-  const courses = await Course.findById(req.params.id);
-  console.log("over");
-  res.send(courses);
-});
-
 // 处理PUT请求
-router.put("/:id", async (req, res) => {
+router.put("/:id", auth, async (req, res) => {
   const { error } = validate(req.body);
   if (error) return res.status(400).send(error.details[0].message);
   const course = await Course.findByIdAndUpdate(
@@ -45,9 +50,10 @@ router.put("/:id", async (req, res) => {
 });
 
 // 处理DELETE请求
-router.delete("/:id", async (req, res) => {
+router.delete("/:id", [auth, admin], async (req, res) => {
   const courses = await Course.findByIdAndRemove(req.params.id);
-  if (!courses) return res.status(404).send("not found");
+  if (!courses)
+    return res.status(404).send("The course with the given id is not found");
   res.send(courses);
 });
 

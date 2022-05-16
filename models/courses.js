@@ -19,7 +19,7 @@ const Course = mongoose.model(
 // 验证逻辑函数
 function validateCourse(course) {
   const schema = Joi.object({
-    name: Joi.string().min(3).required(),
+    name: Joi.string().min(3).max(50).required(),
   });
   return schema.validate(course);
 }
