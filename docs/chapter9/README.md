@@ -1,3 +1,5 @@
+[Main](../../README.md) | [Previous](../chapter8/README.md) | [Next](../chapter10/README.md)
+
 # Chapter 9
 
 Modeling Relationships between Connected Data 数据间的模型关系
@@ -50,3 +52,5 @@ let course3 = {
 ## 9.4 Embedded Documents 嵌入文档
 
 ## 9.5 Array of Sub-Documents 子文档数组
+
+[Main](../../README.md) | [Previous](../chapter8/README.md) | [Next](../chapter10/README.md)

@@ -1,3 +1,5 @@
+[Main](../../README.md) | [Previous](../chapter1/README.md) | [Next](../chapter2/README.md)
+
 # Chapter 2 Module system
 
 ## 7 [path module](https://nodejs.org/dist/latest-v16.x/docs/api/path.html)
@@ -100,3 +102,5 @@ const server = http.createServer((req, res) => {
 server.listen(3000);
 console.log("Listening on port 3000 ...");
 ```
+
+[Main](../../README.md) | [Previous](../chapter/README.md) | [Next](../chapter/README.md)

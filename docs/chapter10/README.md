@@ -1,3 +1,5 @@
+[Main](../../README.md) | [Previous](../chapter9/README.md) | [Next](../chapter11/README.md)
+
 # Chapter 10
 
 Authentication and Authorization 认证与授权
@@ -121,3 +123,5 @@ models/user.js 中生成令牌方法中加入 isAdmin
 middleware/admin.js 创建
 
 ## 10.18 Testing the Authorization 测试验证功能
+
+[Main](../../README.md) | [Previous](../chapter9/README.md) | [Next](../chapter11/README.md)

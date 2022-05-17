@@ -1,3 +1,5 @@
+[Main](../../README.md) | [Previous](../chapter4/README.md) | [Next](../chapter6/README.md)
+
 # Chapter 5 Middleware
 
 ## 5.1 Introduction
@@ -149,3 +151,5 @@ app.get("/", (req, res) => {
 ```
 
 ```
+
+[Main](../../README.md) | [Previous](../chapter4/README.md) | [Next](../chapter6/README.md)

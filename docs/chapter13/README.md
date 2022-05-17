@@ -1,3 +1,5 @@
+[Main](../../README.md) | [Previous](../chapter12/README.md) | [Next](../chapter14/README.md)
+
 # Chapter 13
 
 Integration Testing 集成测试
@@ -43,3 +45,5 @@ course.test.js
 course.test.js
 
 ## 13.11 Testing the Happy Path 测试主要路径
+
+[Main](../../README.md) | [Previous](../chapter12/README.md) | [Next](../chapter14/README.md)

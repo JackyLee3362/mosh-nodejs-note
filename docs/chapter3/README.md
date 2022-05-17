@@ -1,3 +1,5 @@
+[Main](../../README.md) | [Previous](../chapter2/README.md) | [Next](../chapter4/README.md)
+
 # Chapter 3 npm
 
 ## 1 node package manager(npm)
@@ -122,3 +124,5 @@ npm publish
 ```bash
 npm version <major | minor | patch>
 ```
+
+[Main](../../README.md) | [Previous](../chapter2/README.md) | [Next](../chapter4/README.md)

@@ -1,4 +1,7 @@
+[Main](../../README.md) | [Previous](../chapter7/README.md) | [Next](../chapter9/README.md)
 # Chapter 8 验证
+
+[返回主界面](../../README.md) [上一章节](../chapter9/README.md)
 
 ## 8.1 Validation 验证
 
@@ -116,3 +119,4 @@ try {
 ## 8.8 Project 工程二
 
 ## 8.9
+[Main](../../README.md) | [Previous](../chapter7/README.md) | [Next](../chapter9/README.md)

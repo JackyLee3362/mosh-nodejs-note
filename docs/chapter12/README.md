@@ -1,3 +1,5 @@
+[Main](../../README.md) | [Previous](../chapter11/README.md) | [Next](../chapter13/README.md)
+
 # Chapter 12
 
 Unit Testing 单元测试
@@ -112,3 +114,5 @@ const result = await mockFunction();
 ## 12.20 Exercise 练习
 
 文件 /tests/unit/models/user.test.js 需要重新做一遍！！
+
+[Main](../../README.md) | [Previous](../chapter11/README.md) | [Next](../chapter13/README.md)

@@ -1,3 +1,5 @@
+[Main](../../README.md) | [Previous](../chapter6/README.md) | [Next](../chapter8/README.md)
+
 # Chapter 7
 
 ## 7.1 MongoDB
@@ -171,3 +173,5 @@ search mongodb update operators:
 https://www.mongodb.com/docs/manual/reference/operator/update/
 
 ## 7.19 Removing a Document
+
+[Main](../../README.md) | [Previous](../chapter6/README.md) | [Next](../chapter8/README.md)
