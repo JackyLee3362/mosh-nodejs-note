@@ -1,4 +1,7 @@
 {
+  "jwtPrivateKey": "unsecureKey",
   "name": "My Express App",
-  "db": "mongodb://localhost/courses"
+  "db": "mongodb://localhost/courses",
+  "port": "3000",
+  "requiresAuth": true
 }

@@ -1,6 +1,5 @@
 const express = require("express");
 const Joi = require("joi");
-const router = express.Router();
 const { Course, validate } = require("../models/courses");
 const mongoose = require("mongoose");
 const auth = require("../middleware/auth"); // 10.14 保护路由
@@ -8,6 +7,7 @@ const admin = require("../middleware/admin"); // 10.17 基于角色认证
 const asyncMiddleware = require("../middleware/async"); // 11.4 去掉try-catch块
 const validateObjectId = require("../middleware/validateObjectId"); // 13.8
 
+const router = express.Router();
 // GET
 router.get("/", async (req, res, next) => {
   // 11.6 测试winston

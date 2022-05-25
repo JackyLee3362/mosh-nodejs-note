@@ -10,17 +10,15 @@ MongoDB 是非关系型数据库，储存 json 对象
 
 ## 7.3 Install MongoDB on Windows
 
-下载 mongoDB Community 和 mongoCompass
-
-找到 C:\Program\MongoDB\5.0\mongod.exe(这是 mongo demo，运行在后台的服务器，5.0 更改成你的版本)
-
-将 C:\Program\MongoDB\5.0\ 设置为系统路径变量
-
-在命令行中运行 mongod
+- 下载 mongoDB Community 和 mongoCompass
+- 找到 `C:\Program\MongoDB\5.0\mongod.exe`(这是 mongo demo，运行在后台的服务器，5.0 更改成你的版本)
+- 将 `C:\Program\MongoDB\5.0\` 设置为系统路径变量
+- 在命令行中运行 mongod
+- 如果想直接在命令行中运行 mongoDB，输入 mongo
 
 ## 7.4 Conncecting to MongoDB 连接到 MongoDB
 
-下载 mongoose： npm i mongoose
+`npm i mongoose`
 
 ```javascript
 const mongoose = require("mongoose");
@@ -158,10 +156,12 @@ const courses = await Course.find({ author: "jacky", isPublished: true })
 
 ## 7.17 Updating a Document - Query First 更新文档-查询优先
 
-Approach: Query First
-findById()
-Modify its properties
-save()
+尽量不要使用 UpdateOne 或者 UpdateMany，这样会绕过 Schema 的验证，用 findOneAndUpdate 代替
+
+- Approach: Query First
+- findById()
+- Modify its properties
+- save()
 
 ## 7.18
 

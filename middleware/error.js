@@ -13,5 +13,5 @@ module.exports = function (err, req, res, next) {
   // debug
   // silly
 
-  res.status(500).send("Something failed."); // 11.2 500表示服务器内部错误
+  res.status(500).send("error.js: Something failed."); // 11.2 500表示服务器内部错误
 };

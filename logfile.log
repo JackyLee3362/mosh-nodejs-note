@@ -1,0 +1,71 @@
+{"level":"info","message":"Connected to mongodb://localhost/courses"}
+{"level":"info","message":"Connected to mongodb://localhost/courses"}
+{"level":"info","message":"Connected to mongodb://localhost/courses"}
+{"level":"info","message":"listening on port 3000..."}
+{"level":"info","message":"Connected to mongodb://localhost/courses"}
+{"level":"info","message":"listening on port 3000..."}
+{"level":"info","message":"Connected to mongodb://localhost/courses"}
+{"level":"info","message":"listening on port 3000..."}
+{"level":"info","message":"Connected to mongodb://localhost/courses"}
+{"level":"info","message":"listening on port 3000..."}
+{"level":"info","message":"Connected to mongodb://localhost/courses"}
+{"level":"info","message":"Connected to mongodb://localhost/courses"}
+{"code":"MODULE_NOT_FOUND","level":"error","message":"err.message Cannot find module 'pug'\nRequire stack:\n- D:\\Git\\mosh-nodejs-learning-note\\node_modules\\express\\lib\\view.js\n- D:\\Git\\mosh-nodejs-learning-note\\node_modules\\express\\lib\\application.js\n- D:\\Git\\mosh-nodejs-learning-note\\node_modules\\express\\lib\\express.js\n- D:\\Git\\mosh-nodejs-learning-note\\node_modules\\express\\index.js\n- D:\\Git\\mosh-nodejs-learning-note\\index.js","requireStack":["D:\\Git\\mosh-nodejs-learning-note\\node_modules\\express\\lib\\view.js","D:\\Git\\mosh-nodejs-learning-note\\node_modules\\express\\lib\\application.js","D:\\Git\\mosh-nodejs-learning-note\\node_modules\\express\\lib\\express.js","D:\\Git\\mosh-nodejs-learning-note\\node_modules\\express\\index.js","D:\\Git\\mosh-nodejs-learning-note\\index.js"],"stack":"Error: Cannot find module 'pug'\nRequire stack:\n- D:\\Git\\mosh-nodejs-learning-note\\node_modules\\express\\lib\\view.js\n- D:\\Git\\mosh-nodejs-learning-note\\node_modules\\express\\lib\\application.js\n- D:\\Git\\mosh-nodejs-learning-note\\node_modules\\express\\lib\\express.js\n- D:\\Git\\mosh-nodejs-learning-note\\node_modules\\express\\index.js\n- D:\\Git\\mosh-nodejs-learning-note\\index.js\n    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:933:15)\n    at Function.Module._load (node:internal/modules/cjs/loader:778:27)\n    at Module.require (node:internal/modules/cjs/loader:1005:19)\n    at require (node:internal/modules/cjs/helpers:102:18)\n    at new View (D:\\Git\\mosh-nodejs-learning-note\\node_modules\\express\\lib\\view.js:81:14)\n    at Function.render (D:\\Git\\mosh-nodejs-learning-note\\node_modules\\express\\lib\\application.js:587:12)\n    at ServerResponse.render (D:\\Git\\mosh-nodejs-learning-note\\node_modules\\express\\lib\\response.js:1039:7)\n    at D:\\Git\\mosh-nodejs-learning-note\\routes\\home.js:5:7\n    at newFn (D:\\Git\\mosh-nodejs-learning-note\\node_modules\\express-async-errors\\index.js:16:20)\n    at Layer.handle [as handle_request] (D:\\Git\\mosh-nodejs-learning-note\\node_modules\\express\\lib\\router\\layer.js:95:5)"}
+{"level":"info","message":"listening on port 3000..."}
+{"level":"info","message":"Connected to mongodb://localhost/courses"}
+{"level":"info","message":"listening on port 3000..."}
+{"level":"info","message":"Connected to mongodb://localhost/courses"}
+{"level":"info","message":"listening on port 3000..."}
+{"level":"info","message":"Connected to mongodb://localhost/courses"}
+{"level":"info","message":"listening on port 3000..."}
+{"level":"info","message":"Connected to mongodb://localhost/courses"}
+{"level":"info","message":"listening on port 3000..."}
+{"level":"info","message":"Connected to mongodb://localhost/courses"}
+{"level":"info","message":"listening on port 3000..."}
+{"level":"info","message":"Connected to mongodb://localhost/courses"}
+{"level":"info","message":"listening on port 3000..."}
+{"level":"info","message":"Connected to mongodb://localhost/courses"}
+{"level":"info","message":"listening on port 3000..."}
+{"level":"info","message":"Connected to mongodb://localhost/courses"}
+{"level":"info","message":"listening on port 3000..."}
+{"level":"info","message":"Connected to mongodb://localhost/courses"}
+{"level":"info","message":"listening on port 3000..."}
+{"level":"info","message":"Connected to mongodb://localhost/courses"}
+{"level":"info","message":"listening on port 3000..."}
+{"level":"info","message":"Connected to mongodb://localhost/courses"}
+{"level":"info","message":"listening on port 3000..."}
+{"level":"info","message":"Connected to mongodb://localhost/courses"}
+{"level":"info","message":"listening on port 3000..."}
+{"level":"info","message":"Connected to mongodb://localhost/courses"}
+{"level":"info","message":"listening on port 3000..."}
+{"level":"info","message":"Connected to mongodb://localhost/courses"}
+{"level":"info","message":"listening on port 3000..."}
+{"level":"info","message":"Connected to mongodb://localhost/courses"}
+{"level":"info","message":"listening on port 3000..."}
+{"level":"info","message":"Connected to mongodb://localhost/courses"}
+{"level":"info","message":"listening on port 3000..."}
+{"level":"info","message":"Connected to mongodb://localhost/courses"}
+{"level":"info","message":"listening on port 3000..."}
+{"level":"info","message":"Connected to mongodb://localhost/courses"}
+{"level":"info","message":"listening on port 3000..."}
+{"level":"info","message":"Connected to mongodb://localhost/courses"}
+{"level":"info","message":"listening on port 3000..."}
+{"level":"info","message":"Connected to mongodb://localhost/courses"}
+{"level":"info","message":"listening on port 3000..."}
+{"level":"info","message":"Connected to mongodb://localhost/courses"}
+{"level":"info","message":"listening on port 3000..."}
+{"level":"info","message":"Connected to mongodb://localhost/courses"}
+{"level":"info","message":"listening on port 3000..."}
+{"level":"info","message":"Connected to mongodb://localhost/courses"}
+{"level":"info","message":"listening on port 3000..."}
+{"level":"info","message":"Connected to mongodb://localhost/courses"}
+{"level":"info","message":"listening on port 3000..."}
+{"level":"info","message":"Connected to mongodb://localhost/courses"}
+{"body":"{\r\n       \r\n        \"title\": \"A new movie\",\r\n        \"genreId\": \"628dbb502cbfb921769fc834\",\r\n        \"numberInStock\": 15,\r\n        \"dailyRentalRate\": 2\r\n    },","expose":true,"level":"error","message":"err.message Unexpected token , in JSON at position 158","stack":"SyntaxError: Unexpected token , in JSON at position 158\n    at JSON.parse (<anonymous>)\n    at parse (D:\\Git\\mosh-nodejs-learning-note\\node_modules\\body-parser\\lib\\types\\json.js:89:19)\n    at D:\\Git\\mosh-nodejs-learning-note\\node_modules\\body-parser\\lib\\read.js:128:18\n    at AsyncResource.runInAsyncScope (node:async_hooks:202:9)\n    at invokeCallback (D:\\Git\\mosh-nodejs-learning-note\\node_modules\\raw-body\\index.js:231:16)\n    at done (D:\\Git\\mosh-nodejs-learning-note\\node_modules\\raw-body\\index.js:220:7)\n    at IncomingMessage.onEnd (D:\\Git\\mosh-nodejs-learning-note\\node_modules\\raw-body\\index.js:280:7)\n    at IncomingMessage.emit (node:events:539:35)\n    at endReadableNT (node:internal/streams/readable:1345:12)\n    at processTicksAndRejections (node:internal/process/task_queues:83:21)","status":400,"statusCode":400,"type":"entity.parse.failed"}
+{"level":"info","message":"listening on port 3000..."}
+{"level":"info","message":"Connected to mongodb://localhost/courses"}
+{"body":"{\r\n       \r\n        \"title\": \"A new movie\",\r\n        \"genreId\": \"628dbb502cbfb921769fc834\",\r\n        \"numberInStock\": 15,\r\n        \"dailyRentalRate\": 2\r\n    },","expose":true,"level":"error","message":"err.message Unexpected token , in JSON at position 158","stack":"SyntaxError: Unexpected token , in JSON at position 158\n    at JSON.parse (<anonymous>)\n    at parse (D:\\Git\\mosh-nodejs-learning-note\\node_modules\\body-parser\\lib\\types\\json.js:89:19)\n    at D:\\Git\\mosh-nodejs-learning-note\\node_modules\\body-parser\\lib\\read.js:128:18\n    at AsyncResource.runInAsyncScope (node:async_hooks:202:9)\n    at invokeCallback (D:\\Git\\mosh-nodejs-learning-note\\node_modules\\raw-body\\index.js:231:16)\n    at done (D:\\Git\\mosh-nodejs-learning-note\\node_modules\\raw-body\\index.js:220:7)\n    at IncomingMessage.onEnd (D:\\Git\\mosh-nodejs-learning-note\\node_modules\\raw-body\\index.js:280:7)\n    at IncomingMessage.emit (node:events:539:35)\n    at endReadableNT (node:internal/streams/readable:1345:12)\n    at processTicksAndRejections (node:internal/process/task_queues:83:21)","status":400,"statusCode":400,"type":"entity.parse.failed"}
+{"level":"info","message":"listening on port 3000..."}
+{"level":"info","message":"Connected to mongodb://localhost/courses"}
+{"level":"info","message":"listening on port 3000..."}
+{"level":"info","message":"Connected to mongodb://localhost/courses"}
