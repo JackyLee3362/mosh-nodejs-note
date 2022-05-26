@@ -24,10 +24,10 @@ router.post("/", async (req, res) => {
   // 10.9 生成jwt令牌
   // const token = jwt.sign({ _id: user._id }, config.get("jwtPrivateKey"));
   const token = user.generateAuthToken(); // 10.12 封装逻辑
-
-  res
-    .header("x-auth-token", token)
-    .send(_.pick(user, ["_id", "name", "email"]));
+  res.send(token);
+  // res
+  //   .header("x-auth-token", token)
+  //   .send(_.pick(user, ["_id", "name", "email"]));
 });
 
 function validate(user) {

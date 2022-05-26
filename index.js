@@ -4,6 +4,7 @@ const winston = require("winston");
 const app = express();
 
 require("./startup/logging")(); // 11.13 优化日志逻辑
+require("./startup/cors")(app); // react课程中的8.23内容
 require("./startup/route")(app); // 11.11 优化路由逻辑
 require("./startup/db")(); // 11.12 优化数据库逻辑
 require("./startup/config")(); // 11.14 优化配置逻辑

@@ -37,6 +37,7 @@ router.post("/", async (req, res) => {
   const token = user.generateAuthToken(); // 10.12 封装逻辑
   res
     .header("x-auth-token", token)
+    .header("access-control-expose-headers", "x-auth-token") // react 9.9内容，目的是让浏览器可以访问包的头部
     .send(_.pick(user, ["_id", "name", "email"]));
 });
 
